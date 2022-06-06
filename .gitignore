@@ -1,5 +1,12 @@
 # Compiled class file
 *.class
+*.gitattributes
+*.gitignore
+*.project
+*.tern-project
+*.LICENSE
+
+
 
 # Log file
 *.log
