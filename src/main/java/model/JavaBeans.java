@@ -9,6 +9,18 @@ public class JavaBeans {
 	
 	
 	
+	public JavaBeans() {
+		super();
+	}
+	
+	public JavaBeans(String idcon, String nome, String fone, String email) {
+		super();
+		this.idcon = idcon;
+		this.nome = nome;
+		this.fone = fone;
+		this.email = email;
+	}
+
 	public String getIdcon() {
 		return idcon;
 	}
