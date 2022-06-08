@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Cria novo contato</h1>
-	<form name="frmContato" action="">
+	<form name="frmContato" action="insert">
 		<table>
 			<tr>
 			<td><input type="text" name="nome" placeholder="Nome" class="Caixa1">
@@ -20,7 +20,8 @@
 			<td><input type="text" name="email" placeholder="E-mail" class="Caixa1">
 			</tr>
 		</table>
-			<input type="button" value="Adicionar" class="Botao1">
+			<input type="button" value="Adicionar" class="Botao1" onclick="validar()">
 	</form>
+	<script src="scripts/validador.js"></script>
 </body>
 </html>
