@@ -5,7 +5,7 @@ body{
 	
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
-	font-weigth: 400;
+	font-weight: 400;
 	
 }
 
@@ -21,4 +21,21 @@ h1{
 	font-size: 1.2em;
 	font-weight: 700;
 	border-radius: 5px; /* arredondar as bordas */
+	border: 0; /* tirar a borda sombreada */
+	cursor: pointer; /* transformar ponteiro em maozinha */
+}
+
+.Caixa1 {
+	width: 320px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #66bbff;
+	border-radius: 5px;
+}
+
+.Caixa2 {
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #66bbff;
+	border-radius: 5px;
 }
