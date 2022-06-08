@@ -59,6 +59,7 @@ public class Controller extends HttpServlet {
 		}
 
 	}
+	
 	// Novoc contato.
 	protected void novoContato(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

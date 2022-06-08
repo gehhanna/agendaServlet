@@ -42,6 +42,7 @@ h1{
 
 #tabela {
 	margin-top: 30px;
+	border-collapse: collapse;
 }
 
 #tabela th {
@@ -52,3 +53,11 @@ h1{
 	background-color: #66bbff;
 	color: #fff;
 }
+
+#tabela td {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+
+
