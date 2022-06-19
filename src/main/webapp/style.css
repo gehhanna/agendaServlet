@@ -11,9 +11,10 @@ body{
 
 h1{
 	color: #66bbff;
+	
 }
 
-.Botao1{
+.BotaoEditar{
 	text-decoration: none; /* tirar a textura de link */
 	background-color: #66bbff;
 	padding: 5px 10px 5px 10px;
@@ -24,6 +25,21 @@ h1{
 	border: 0; /* tirar a borda sombreada */
 	cursor: pointer; /* transformar ponteiro em maozinha */
 }
+
+.BotaoExcluir{
+	text-decoration: none;
+	background-color: rgb(255,0,0);
+	padding: 5px 10px 5px 10px;
+	color: rgb(255,255,255);
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	
+	
+}
+
 
 .Caixa1 {
 	width: 320px;

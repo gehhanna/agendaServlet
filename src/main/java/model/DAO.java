@@ -36,7 +36,7 @@ public class DAO {
 		String create = "insert into contatos (nome,fone,email) values (?,?,?)";
 		try {
 
-			// abrir a conexão
+			// abrir a conexão com o banco de dados.
 			Connection con = conectar();
 
 			// Preparar a query para execução no banco de dados.
@@ -105,6 +105,25 @@ public class DAO {
 			con.close();
 		} catch (Exception e) {
 			System.out.println(e);
+		}
+	}
+	
+	// alterar o contato
+	
+	public void alterarContato(JavaBeans contato) {
+		String update = "update contatos set nome=?,fone=?,email=? where idcon=?";
+		try {
+			Connection con = conectar();
+			PreparedStatement pstm = con.prepareStatement(update);
+		//	Método requisista os dados do contato da classe java beans.
+			pstm.setString(1, contato.getNome());
+			pstm.setString(2, contato.getFone());
+			pstm.setString(3, contato.getEmail());
+			pstm.setString(4, contato.getIdcon());
+			pstm.executeUpdate();
+			con.close();
+		} catch (Exception e) {
+			
 		}
 	}
 }

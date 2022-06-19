@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h1>Editar contato</h1>
-	<form name="frmContato" action="">
+	<form name="frmContato" action="update">
 		<table>
 			<tr>
 				<td><input type="text" name="idcon" class="caixa3" readonly
@@ -32,7 +32,7 @@
 					value="<%out.print(request.getAttribute("email"));%>"></td>
 			</tr>
 		</table>
-		<input type="button" value="Adicionar" class="Botao1"
+		<input type="button" value="Salvar" class="Botao1"
 			onclick="validar()">
 	</form>
 	<script src="scripts/validador.js"></script>
