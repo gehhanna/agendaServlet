@@ -96,7 +96,7 @@ public class DAO {
 			pst.setString(1, contato.getIdcon());
 			ResultSet rs = pst.executeQuery();
 			while (rs.next()) {
-				//setar as variáveis JavaBeans
+				// setar as variáveis JavaBeans
 				contato.setIdcon(rs.getString(1));
 				contato.setNome(rs.getString(2));
 				contato.setFone(rs.getString(3));
@@ -107,15 +107,15 @@ public class DAO {
 			System.out.println(e);
 		}
 	}
-	
+
 	// alterar o contato
-	
+
 	public void alterarContato(JavaBeans contato) {
 		String update = "update contatos set nome=?,fone=?,email=? where idcon=?";
 		try {
 			Connection con = conectar();
 			PreparedStatement pstm = con.prepareStatement(update);
-		//	Método requisista os dados do contato da classe java beans.
+			// Método requisista os dados do contato da classe java beans.
 			pstm.setString(1, contato.getNome());
 			pstm.setString(2, contato.getFone());
 			pstm.setString(3, contato.getEmail());
@@ -123,7 +123,21 @@ public class DAO {
 			pstm.executeUpdate();
 			con.close();
 		} catch (Exception e) {
-			
+
+		}
+	}
+
+	/** CRUD DELETE **/
+	public void deletarContato(JavaBeans contato) {
+		String delete = "delete from contatos where idcon=?";
+		try {
+			Connection con = conectar();
+			PreparedStatement pst = con.prepareStatement(delete);
+			pst.setString(1, contato.getIdcon());
+			pst.executeUpdate();
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
 		}
 	}
 }

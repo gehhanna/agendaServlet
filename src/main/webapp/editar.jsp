@@ -32,7 +32,7 @@
 					value="<%out.print(request.getAttribute("email"));%>"></td>
 			</tr>
 		</table>
-		<input type="button" value="Salvar" class="Botao1"
+		<input type="button" value="Salvar" class="BotaoEditar"
 			onclick="validar()">
 	</form>
 	<script src="scripts/validador.js"></script>

@@ -56,6 +56,6 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 			<%}%>
 		</tbody>
 	</table>
-	<script src="scripts/confirmador.js"></script>"
+	<script src="scripts/confirmador.js"></script>
 </body>
 </html>
